@@ -1,0 +1,34 @@
+{
+  "name": "nexusai-discord-bot",
+  "version": "2.0.0",
+  "description": "Advanced Discord Bot with AI Assistant, Roasting, Anger Mode, Meme Generator, and YouTube Notifications",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "@discordjs/builders": "^1.7.0",
+    "@discordjs/rest": "^2.2.0",
+    "discord-api-types": "^0.37.61",
+    "openai": "^4.28.0",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1",
+    "node-cron": "^3.0.3",
+    "chalk": "^4.1.2",
+    "figlet": "^1.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "eslint": "^8.56.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
