@@ -1,4 +1,4 @@
-# 🤖 NexusAI Discord Bot (JavaScript)
+#  (JavaScript)
 
 Bot Discord AI serbaguna berbasis **Node.js + Discord.js v14** dengan fitur lengkap: AI Asisten, AI Roasting, AI Mode Marah, AI Meme Generator, dan Notifikasi YouTube otomatis.
 
