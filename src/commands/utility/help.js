@@ -66,7 +66,7 @@ module.exports = {
         )
         .setFooter({ text: 'Page 3/4' }),
 
-      // PAGE 5 - UTILITAS
+      // PAGE 4 - UTILITAS
       new EmbedBuilder()
         .setColor(0x5865F2)
         .setTitle('Utilitas')
