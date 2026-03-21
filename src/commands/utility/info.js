@@ -25,8 +25,6 @@ module.exports = {
         { name: '📦 Versi',       value: '2.0.0',                   inline: true },
         { name: '📺 YT Notif',    value: process.env.YOUTUBE_API_KEY ? '✅ Aktif' : '❌ Tidak aktif', inline: true },
         { name: '⏱️ Uptime',      value: `${hours}h ${minutes}m ${seconds}s`, inline: true },
-        { name: '📺 IP server',   value: **kocak.playserver.pro** },
-        { name: '🎮 Minecraft',   value: Version: 1.20+ },
       )
       .setFooter({ text: 'Kocak Utils • Always Online 24/7 🟢' })
       .setTimestamp();
