@@ -1,6 +1,6 @@
 require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });
-console.log('API KEY:', process.env.GROQ_API_KEY);
-console.log('DISCORD TOKEN:', process.env.DISCORD_BOT_TOKEN);
+console.log('API KEY:', process.env.GROQ_API_KEY ? 'ADA' : 'TIDAK ADA');
+console.log('DISCORD TOKEN:', process.env.DISCORD_BOT_TOKEN ? 'ADA' : 'TIDAK ADA');
 const { Client, GatewayIntentBits, Partials, Collection, ActivityType } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
