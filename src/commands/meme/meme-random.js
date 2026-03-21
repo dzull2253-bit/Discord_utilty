@@ -5,10 +5,10 @@ const { trunc } = require('../../utils/banner');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('meme-random')
-    .setDescription('🎲 AI pilih template meme terbaik secara otomatis!')
+    .setDescription('enter dah ntar dipilihin')
     .addStringOption(o =>
       o.setName('topik')
-        .setDescription('Topik untuk meme')
+        .setDescription('pilih topik cepat')
         .setRequired(true)
         .setMaxLength(300)),
 
@@ -23,7 +23,7 @@ module.exports = {
       .setTitle('🎲 RANDOM MEME!')
       .setDescription(trunc(meme))
       .addFields({ name: '📌 Topik', value: topik, inline: true })
-      .setFooter({ text: 'MemeGod • Template dipilih oleh takdir 🎰' })
+      .setFooter({ text: 'dah dipilihin noh' })
       .setTimestamp();
 
     await interaction.editReply({ embeds: [embed] });
