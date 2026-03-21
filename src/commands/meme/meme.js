@@ -11,8 +11,8 @@ const subreddits = [
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("memes")
-    .setDescription("Ambil meme random dari Reddit"),
+    .setName("meme")
+    .setDescription("meme random dari Reddit"),
 
   async execute(interaction) {
     try {
@@ -32,7 +32,7 @@ module.exports = {
 
     } catch (err) {
       console.error(err);
-      interaction.reply("❌ Gagal ambil meme, coba lagi nanti");
+      interaction.reply("Ntar lagi sibuk, coba lagi dah nanti");
     }
   }
 };
