@@ -40,6 +40,27 @@ module.exports = {
       logger.info(`📺 YouTube scheduler started (every ${interval} min)`);
     } else {
       logger.warn('⚠️  YOUTUBE_API_KEY not set. YouTube notifications disabled.');
+
+    // Meme scheduler (tiap 1 jam)
+    cron.schedule("0 * * * *", async () => {
+      const channel = client.channels.cache.get("1432040919682519264");
+    
+      if (!channel) return logger.warn("⚠️ Channel meme gak ketemu");
+    
+      try {
+        const axios = require("axios");
+        const res = await axios.get("https://meme-api.com/gimme");
+        await channel.send(res.data.url);
+        logger.info("📤 Meme terkirim");
+      } catch (err) {
+        logger.error("❌ Error kirim meme:", err.message);
+      }
+    }, {
+      timezone: "Asia/Jakarta"
+    });
+    
+    logger.info("😂 Meme scheduler started (every 1 hour)");
+      
     }
   },
 };
