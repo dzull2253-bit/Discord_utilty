@@ -5,7 +5,7 @@ const { trunc } = require('../../utils/banner');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('marah')
-    .setDescription('😡 AI mode MARAH — jawab dengan penuh kemarahan dramatis!')
+    .setDescription('😡 AI mode MARAH — jawab dengan penuh amarah!')
     .addStringOption(o =>
       o.setName('alasan')
         .setDescription('Kenapa AI harus marah?')
@@ -20,7 +20,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setColor(0xFF0000)
-      .setTitle('😡 MODE MARAH AKTIF! 😡')
+      .setTitle('😡 MODE MARAH ON! 😡')
       .setDescription(trunc(response))
       .addFields({ name: '💢 Penyebab Kemarahan', value: trunc(alasan, 512) })
       .setFooter({ text: 'RageBot v2.0 • NGAMUK MODE 🤬' })
