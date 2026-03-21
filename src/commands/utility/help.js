@@ -13,13 +13,16 @@ module.exports = {
       // PAGE 1 - AI ASISTEN
       new EmbedBuilder()
         .setColor(0x5865F2)
-        .setTitle('🤖 AI Asisten')
+        .setTitle('🤖 AI')
         .setDescription(
           '`/ask`\n> Tanya apa saja ke AI\n\n' +
           '`/chat`\n> Chat AI dengan konteks percakapan\n\n' +
           '`/joke`\n> Dapatkan joke random\n\n' +
           '`/motivasi`\n> Kata motivasi biar semangat 🔥\n\n' +
           '`/fakta`\n> Fakta unik berdasarkan topik'
+                    
+          '**Tips:**\n' +
+          'Mention bot + pertanyaan langsung bisa AI jawab 😎'
         )
         .setFooter({ text: 'Page 1/5' }),
 
@@ -32,6 +35,9 @@ module.exports = {
           '`/roast-me`\n> Roast diri sendiri 🤡\n\n' +
           '`/roast-custom`\n> Roast berdasarkan deskripsi\n\n' +
           '> Level: ringan / sedang / brutal / sadis'
+
+          '**Tips:**\n' +
+          'Mention bot + pertanyaan langsung bisa AI jawab 😎'
         )
         .setFooter({ text: 'Page 2/5' }),
 
@@ -43,6 +49,9 @@ module.exports = {
           '`/marah`\n> AI ngamuk sesuai alasan\n\n' +
           '`/rant`\n> Curhat panjang + emosi\n\n' +
           '`/komplain`\n> Komplain dramatis 🤣'
+          
+          '**Tips:**\n' +
+          'Mention bot + pertanyaan langsung bisa AI jawab 😎'
         )
         .setFooter({ text: 'Page 3/5' }),
 
@@ -61,6 +70,9 @@ module.exports = {
           '`/yt-unsubscribe`\n> Unsubscribe channel\n\n' +
           '`/yt-list`\n> Lihat daftar channel\n\n' +
           '`/yt-check`\n> Cek info channel'
+
+          '**Tips:**\n' +
+          'Mention bot + pertanyaan langsung bisa AI jawab 😎'
         )
         .setFooter({ text: 'Page 4/5' }),
 
