@@ -15,8 +15,8 @@ module.exports = {
         .setColor(0x5865F2)
         .setTitle('AI Asisten')
         .setDescription(
-          '`/ip`\n> IP server Minecraft\n\n' +
-          '`/online`\n> chek berapa yang online di server 
+          '`/mc ip`\n> IP server Minecraft\n\n' +
+          '`/mc online`\n> chek berapa yang online di server' +
           '`/ask`\n> Tanya apa saja ke AI\n\n' +
           '`/chat`\n> Chat AI dengan konteks percakapan\n\n' +
           '`/joke`\n> Dapatkan joke random\n\n' +
