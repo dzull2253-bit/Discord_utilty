@@ -13,70 +13,58 @@ module.exports = {
       // PAGE 1 - AI ASISTEN
       new EmbedBuilder()
         .setColor(0x5865F2)
-        .setTitle('AI Asisten')
+        .setTitle('AI Asisten & Meme')
         .setDescription(
-          '`/mc ip`\n> IP server Minecraft\n\n' +
-          '`/mc online`\n> chek berapa yang online di server' +
-          '`/ask`\n> Tanya apa saja ke AI\n\n' +
-          '`/chat`\n> Chat AI dengan konteks percakapan\n\n' +
-          '`/joke`\n> Dapatkan joke random\n\n' +
-          '`/motivasi`\n> Kata motivasi biar semangat 🔥\n\n' +
-          '`/fakta`\n> Fakta unik berdasarkan topik' +
-                    
+          '`/mc ip`\n> IP server Minecraft\n' +
+          '`/mc online`\n> chek berapa yang online di server\n' +
+          '`/ask`\n> Tanya apa saja ke AI\n' +
+          '`/chat`\n> Chat AI dengan konteks percakapan\n' +
+          '`/joke`\n> Dapatkan joke random\n' +
+          '`/motivasi`\n> Kata motivasi biar semangat 🔥\n' +
+          '`/fakta`\n> Fakta unik berdasarkan topik\n\n' +
+          
+          '**Meme:**\n' +
+          '`/meme`\n> Kirim meme random\n\n' +   
+          
           '**Tips:**\n' +
           'Mention bot + pertanyaan langsung bisa AI jawab 😎'
         )
-        .setFooter({ text: 'Page 1/5' }),
+        .setFooter({ text: 'Page 1/4' }),
 
       // PAGE 2 - ROAST
       new EmbedBuilder()
         .setColor(0x5865F2)
         .setTitle('AI Roasting')
         .setDescription(
-          '`/roast @user`\n> Roast orang lain (pilih level)\n\n' +
-          '`/roast-me`\n> Roast diri sendiri 🤡\n\n' +
-          '`/roast-custom`\n> Roast berdasarkan deskripsi\n\n' +
-          '> Level: ringan / sedang / brutal / sadis' +
+          '`/roast @user`\n> Roast orang lain (pilih level)\n' +
+          '`/roast-me`\n> Roast diri sendiri 🤡\n' +
+          '`/roast-custom`\n> Roast berdasarkan deskripsi\n' +
+          '> Level: ringan / sedang / brutal / sadis\n\n' +
 
           '**Tips:**\n' +
           'Mention bot + pertanyaan langsung bisa AI jawab 😎'
         )
-        .setFooter({ text: 'Page 2/5' }),
+        .setFooter({ text: 'Page 2/4' }),
 
       // PAGE 3 - MODE MARAH
       new EmbedBuilder()
         .setColor(0x5865F2)
-        .setTitle('AI Mode Marah')
+        .setTitle('AI Marah & Notif Youtube')
         .setDescription(
-          '`/marah`\n> AI ngamuk sesuai alasan\n\n' +
-          '`/rant`\n> Curhat panjang + emosi\n\n' +
-          '`/komplain`\n> Komplain dramatis 🤣' +
+          '`/marah`\n> AI ngamuk sesuai alasan\n' +
+          '`/rant`\n> Curhat panjang + emosi\n' +
+          '`/komplain`\n> Komplain dramatis \n\n' +
+
+          '**YouTube:**\n' +
+          '`/yt-subscribe`\n> Subscribe channel (admin)\n' +
+          '`/yt-unsubscribe`\n> Unsubscribe channel\n' +
+          '`/yt-list`\n> Lihat daftar channel\n' +
+          '`/yt-check`\n> Cek info channel\n\n' +
           
           '**Tips:**\n' +
           'Mention bot + pertanyaan langsung bisa AI jawab 😎'
         )
-        .setFooter({ text: 'Page 3/5' }),
-
-      // PAGE 4 - MEME & YT
-      new EmbedBuilder()
-        .setColor(0x5865F2)
-        .setTitle('Meme & YouTube')
-        .setDescription(
-          '**Meme:**\n' +
-          '`/meme`\n> Kirim meme random\n\n' +
-          '`/meme-random`\n> Meme sesuai topik\n\n' +
-          '`/caption-meme`\n> Buat caption meme\n\n' +
-
-          '**YouTube:**\n' +
-          '`/yt-subscribe`\n> Subscribe channel (admin)\n\n' +
-          '`/yt-unsubscribe`\n> Unsubscribe channel\n\n' +
-          '`/yt-list`\n> Lihat daftar channel\n\n' +
-          '`/yt-check`\n> Cek info channel' +
-
-          '**Tips:**\n' +
-          'Mention bot + pertanyaan langsung bisa AI jawab 😎'
-        )
-        .setFooter({ text: 'Page 4/5' }),
+        .setFooter({ text: 'Page 3/4' }),
 
       // PAGE 5 - UTILITAS
       new EmbedBuilder()
@@ -91,7 +79,7 @@ module.exports = {
           '**Tips:**\n' +
           'Mention bot + pertanyaan langsung bisa AI jawab 😎'
         )
-        .setFooter({ text: 'Page 5/5' }),
+        .setFooter({ text: 'Page 4/4' }),
     ];
 
     const getButtons = () =>
