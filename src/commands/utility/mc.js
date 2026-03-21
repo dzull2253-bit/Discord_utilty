@@ -22,7 +22,7 @@ module.exports = {
     try {
       if (sub === 'status') {
         const res = await util.status(HOST, PORT);
-        return interaction.reply(`🟢 Online (${res.players.online}/${res.players.max})`);
+        return interaction.reply(`🟢 Online (${res.players.online} / 100)`);
       }
 
       if (sub === 'ip') {
