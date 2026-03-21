@@ -24,8 +24,6 @@ const client = new Client({
 
 const axios = require("axios");
 
-setInterval(async () => {
-  const channel = client.channels.cache.get("1432040919682519264");
   if (!channel) return;
 
   try {
