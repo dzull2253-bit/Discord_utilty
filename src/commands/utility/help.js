@@ -13,13 +13,15 @@ module.exports = {
       // PAGE 1 - AI ASISTEN
       new EmbedBuilder()
         .setColor(0x5865F2)
-        .setTitle('🤖 AI')
+        .setTitle('AI Asisten')
         .setDescription(
+          '`/ip`\n> IP server Minecraft\n\n' +
+          '`/online`\n> chek berapa yang online di server 
           '`/ask`\n> Tanya apa saja ke AI\n\n' +
           '`/chat`\n> Chat AI dengan konteks percakapan\n\n' +
           '`/joke`\n> Dapatkan joke random\n\n' +
           '`/motivasi`\n> Kata motivasi biar semangat 🔥\n\n' +
-          '`/fakta`\n> Fakta unik berdasarkan topik'
+          '`/fakta`\n> Fakta unik berdasarkan topik' +
                     
           '**Tips:**\n' +
           'Mention bot + pertanyaan langsung bisa AI jawab 😎'
@@ -29,12 +31,12 @@ module.exports = {
       // PAGE 2 - ROAST
       new EmbedBuilder()
         .setColor(0x5865F2)
-        .setTitle('🔥 AI Roasting')
+        .setTitle('AI Roasting')
         .setDescription(
           '`/roast @user`\n> Roast orang lain (pilih level)\n\n' +
           '`/roast-me`\n> Roast diri sendiri 🤡\n\n' +
           '`/roast-custom`\n> Roast berdasarkan deskripsi\n\n' +
-          '> Level: ringan / sedang / brutal / sadis'
+          '> Level: ringan / sedang / brutal / sadis' +
 
           '**Tips:**\n' +
           'Mention bot + pertanyaan langsung bisa AI jawab 😎'
@@ -44,11 +46,11 @@ module.exports = {
       // PAGE 3 - MODE MARAH
       new EmbedBuilder()
         .setColor(0x5865F2)
-        .setTitle('😡 AI Mode Marah')
+        .setTitle('AI Mode Marah')
         .setDescription(
           '`/marah`\n> AI ngamuk sesuai alasan\n\n' +
           '`/rant`\n> Curhat panjang + emosi\n\n' +
-          '`/komplain`\n> Komplain dramatis 🤣'
+          '`/komplain`\n> Komplain dramatis 🤣' +
           
           '**Tips:**\n' +
           'Mention bot + pertanyaan langsung bisa AI jawab 😎'
@@ -58,7 +60,7 @@ module.exports = {
       // PAGE 4 - MEME & YT
       new EmbedBuilder()
         .setColor(0x5865F2)
-        .setTitle('😂 Meme & YouTube')
+        .setTitle('Meme & YouTube')
         .setDescription(
           '**Meme:**\n' +
           '`/meme`\n> Kirim meme random\n\n' +
@@ -69,7 +71,7 @@ module.exports = {
           '`/yt-subscribe`\n> Subscribe channel (admin)\n\n' +
           '`/yt-unsubscribe`\n> Unsubscribe channel\n\n' +
           '`/yt-list`\n> Lihat daftar channel\n\n' +
-          '`/yt-check`\n> Cek info channel'
+          '`/yt-check`\n> Cek info channel' +
 
           '**Tips:**\n' +
           'Mention bot + pertanyaan langsung bisa AI jawab 😎'
@@ -79,7 +81,7 @@ module.exports = {
       // PAGE 5 - UTILITAS
       new EmbedBuilder()
         .setColor(0x5865F2)
-        .setTitle('⚙️ Utilitas')
+        .setTitle('Utilitas')
         .setDescription(
           '`/help`\n> Tampilkan menu ini\n\n' +
           '`/info`\n> Info tentang bot\n\n' +
