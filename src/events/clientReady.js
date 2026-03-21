@@ -4,11 +4,13 @@ const logger = require('../utils/logger');
 const { checkAllSubscriptions } = require('../services/youtubeService');
 
 const ACTIVITIES = [
-  { type: ActivityType.Watching, name: '🤖 AI Assistant | /help' },
-  { type: ActivityType.Playing,  name: '🔥 Roasting everyone | /roast' },
-  { type: ActivityType.Listening, name: '😡 Getting angry | /marah' },
-  { type: ActivityType.Watching, name: '😂 Making memes | /meme' },
-  { type: ActivityType.Watching, name: '📺 YouTube Notif | /yt-subscribe' },
+  { type: ActivityType.Watching, name: '/help' },
+  { type: ActivityType.Watching, name: '/help' },
+  { type: ActivityType.Watching, name: 'meme | /meme' },
+  { type: ActivityType.Watching, name: 'YouTube notif | /yt-subscribe' },
+  { type: ActivityType.Watching, name: 'Minecraft | kocak.playserver.pro' },
+  { type: ActivityType.Watching, name: 'Minecraft | kocak.playserver.pro' },
+  { type: ActivityType.Watching, name: 'Minecraft | kocak.playserver.pro' },
 ];
 let actIdx = 0;
 
