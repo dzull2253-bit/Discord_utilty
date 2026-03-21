@@ -13,7 +13,7 @@ module.exports = {
       .setThumbnail(interaction.client.user.displayAvatarURL())
       .addFields(
         {
-          name: '🧠 AI Asisten',
+          name: 'AI Asisten',
           value:
             '`/ask` — Tanya apapun ke AI\n' +
             '`/chat` — Chat dengan konteks percakapan\n' +
@@ -23,7 +23,7 @@ module.exports = {
           inline: false,
         },
         {
-          name: '🔥 AI Roasting',
+          name: 'AI Roasting',
           value:
             '`/roast @user [level]` — Roast seseorang\n' +
             '`/roast-me` — Roast sendiri\n' +
@@ -32,7 +32,7 @@ module.exports = {
           inline: false,
         },
         {
-          name: '😡 AI Mode Marah',
+          name: 'AI Mode Marah',
           value:
             '`/marah [alasan]` — AI ngamuk dramatis!\n' +
             '`/rant [topik]` — AI ngomel panjang lebar\n' +
@@ -40,15 +40,15 @@ module.exports = {
           inline: false,
         },
         {
-          name: '😂 AI Meme Generator',
+          name: 'Generate Meme',
           value:
-            '`/memes` — Generate meme random\n' +
+            '`/meme` — Generate meme random\n' +
             '`/meme-random [topik]` — Meme template random\n' +
             '`/caption-meme [situasi]` — Caption meme',
           inline: false,
         },
         {
-          name: '📺 YouTube Notifications',
+          name: 'YouTube Notifications',
           value:
             '`/yt-subscribe` — Subscribe channel YouTube *(Admin)*\n' +
             '`/yt-unsubscribe` — Unsubscribe *(Admin)*\n' +
@@ -57,7 +57,7 @@ module.exports = {
           inline: false,
         },
         {
-          name: '🛠️ Utilitas',
+          name: 'Utilitas',
           value:
             '`/help` — Panduan ini\n' +
             '`/info` — Info bot\n' +
@@ -66,8 +66,8 @@ module.exports = {
           inline: false,
         },
         {
-          name: '💡 Tips',
-          value: 'Kamu juga bisa **mention bot** (`@Kocak Utils [pertanyaan]`) untuk chat langsung tanpa slash command!',
+          name: 'Tips',
+          value: 'bisa nanyak ke bot dengan cara **mention bot** (`@Kocak Utils [pertanyaan]`) langsung tanpa slash command!',
           inline: false,
         },
       )
