@@ -26,7 +26,7 @@ module.exports = {
           name: '🔥 AI Roasting',
           value:
             '`/roast @user [level]` — Roast seseorang\n' +
-            '`/roast-me` — Roast diri sendiri\n' +
+            '`/roast-me` — Roast sendiri\n' +
             '`/roast-custom [deskripsi]` — Roast kustom\n' +
             '> Level: ringan / sedang / brutal / sadis',
           inline: false,
@@ -42,7 +42,7 @@ module.exports = {
         {
           name: '😂 AI Meme Generator',
           value:
-            '`/meme [template] [topik]` — Generate meme\n' +
+            '`/memes` — Generate meme random\n' +
             '`/meme-random [topik]` — Meme template random\n' +
             '`/caption-meme [situasi]` — Caption meme',
           inline: false,
@@ -67,11 +67,11 @@ module.exports = {
         },
         {
           name: '💡 Tips',
-          value: 'Kamu juga bisa **mention bot** (`@NexusAI [pertanyaan]`) untuk chat langsung tanpa slash command!',
+          value: 'Kamu juga bisa **mention bot** (`@Kocak Utils [pertanyaan]`) untuk chat langsung tanpa slash command!',
           inline: false,
         },
       )
-      .setFooter({ text: 'NexusAI v2.0 • Dibuat dengan ❤️ dan banyak kopi ☕' })
+      .setFooter({ text: ' Kocak AI ' })
       .setTimestamp();
 
     await interaction.reply({ embeds: [embed] });
