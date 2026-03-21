@@ -43,7 +43,8 @@ module.exports = {
           '> Level: ringan / sedang / brutal / sadis\n\n' +
 
           '**Tips:**\n' +
-          'Mention bot + pertanyaan langsung bisa AI jawab 😎'
+          'Minecraft server : **kocak.playserver.pro**\n' +
+          'Mention bot + pertanyaan langsung bisa AI jawab (@kocak utils [pertanyaan])'
         )
         .setFooter({ text: 'Page 2/4' }),
 
@@ -63,7 +64,8 @@ module.exports = {
           '`/yt-check`\n> Cek info channel\n\n' +
           
           '**Tips:**\n' +
-          'Mention bot + pertanyaan langsung bisa AI jawab 😎'
+          'Minecraft server : **kocak.playserver.pro**\n' +
+          'Mention bot + pertanyaan langsung bisa AI jawab (@kocak utils [pertanyaan])'
         )
         .setFooter({ text: 'Page 3/4' }),
 
@@ -78,7 +80,8 @@ module.exports = {
           '`/clear`\n> Hapus pesan (admin)\n\n' +
 
           '**Tips:**\n' +
-          'Mention bot + pertanyaan langsung bisa AI jawab 😎'
+          'Minecraft server : **kocak.playserver.pro**\n' +
+          'Mention bot + pertanyaan langsung bisa AI jawab (@kocak utils [pertanyaan])'
         )
         .setFooter({ text: 'Page 4/4' }),
     ];
