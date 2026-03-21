@@ -5,7 +5,7 @@ const { trunc } = require('../../utils/banner');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('ask')
-    .setDescription('🤖 Tanya AI Asisten apapun!')
+    .setDescription('Tanya apa saja pada AI!')
     .addStringOption(o => o.setName('pertanyaan').setDescription('Pertanyaan kamu').setRequired(true).setMaxLength(1000)),
 
   async execute(interaction, client) {
@@ -16,7 +16,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setColor(0x5865F2)
-      .setTitle(' Wait lagi di jawab ')
+      .setTitle('Nungguin ya')
       .addFields(
         { name: '❓ Pertanyaan', value: trunc(question, 1024) },
         { name: '💬 Jawaban', value: trunc(response, 2048) },
