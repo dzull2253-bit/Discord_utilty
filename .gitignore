@@ -1,0 +1,29 @@
+# 🔒 ENV (WAJIB BANGET)
+.env
+.env.*
+
+# 📦 Dependencies
+node_modules/
+
+# 📜 Logs
+logs/
+*.log
+
+# 🗑 Cache & temp
+.cache/
+.tmp/
+
+# ⚙️ Build (kalau nanti pake)
+dist/
+build/
+
+# 💻 OS junk
+.DS_Store
+Thumbs.db
+
+# 🧠 Editor
+.vscode/
+.idea/
+
+# 🔐 Optional (kalau gak mau ke-upload)
+# package-lock.json
