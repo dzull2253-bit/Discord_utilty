@@ -1,12 +1,14 @@
-# 🤖 NexusAI Discord Bot (JavaScript)
+# 🤖 Kocak Discord Bot (JavaScript)
+#  (JavaScript)
 
 Bot Discord AI serbaguna berbasis **Node.js + Discord.js v14** dengan fitur lengkap: AI Asisten, AI Roasting, AI Mode Marah, AI Meme Generator, dan Notifikasi YouTube otomatis.
 
 ---
 
 ## ✨ Fitur Lengkap
-
 ### 🧠 AI Asisten (Groq — LLaMA 3.3 ⚡)
+=======
+### 🧠 AI Asisten (OpenAI GPT)
 | Command | Deskripsi |
 |---------|-----------|
 | `/ask [pertanyaan]` | Tanya apapun ke AI |
@@ -83,6 +85,8 @@ Isi minimal yang **WAJIB**:
 DISCORD_BOT_TOKEN=token_bot_kamu
 CLIENT_ID=client_id_bot_kamu
 GROQ_API_KEY=gsk_api_key_groq_kamu
+=======
+OPENAI_API_KEY=sk-api_key_openai_kamu
 ```
 
 ### 3. Setup Discord Bot
@@ -118,7 +122,6 @@ npm run dev        # Development (auto-restart dengan nodemon)
 ```
 
 ---
-
 ## ⚡ Setup Groq API (GRATIS!)
 
 Groq jauh lebih cepat dari OpenAI dan **100% GRATIS** untuk digunakan!
@@ -144,6 +147,8 @@ GROQ_MODEL=llama-3.3-70b-versatile
 ```
 
 > **Rate Limit Gratis:** ~30 request/menit, ~14,400 request/hari — lebih dari cukup untuk server Discord!
+=======
+## 📺 Setup YouTube API (Opsional)
 
 1. Buka [Google Cloud Console](https://console.developers.google.com)
 2. Buat project baru atau pilih yang ada
@@ -221,6 +226,7 @@ discord-bot-js/
 │   │   └── messageCreate.js        # Handler mention bot
 │   ├── services/
 │   │   ├── aiService.js            # Groq API integration (semua mode AI)
+│   │   ├── aiService.js            # OpenAI integration (semua mode AI)
 │   │   └── youtubeService.js       # YouTube API integration
 │   └── utils/
 │       ├── cooldown.js             # Sistem cooldown per command
@@ -243,6 +249,11 @@ discord-bot-js/
 | `YOUTUBE_API_KEY` | — | Opsional, untuk fitur YT |
 | `GUILD_ID` | — | Opsional, untuk dev mode |
 | `GROQ_MODEL` | `llama-3.3-70b-versatile` | Model Groq yang digunakan |
+=======
+| `OPENAI_API_KEY` | — | **WAJIB** API Key OpenAI |
+| `YOUTUBE_API_KEY` | — | Opsional, untuk fitur YT |
+| `GUILD_ID` | — | Opsional, untuk dev mode |
+| `OPENAI_MODEL` | `gpt-4o-mini` | Model AI yang digunakan |
 | `YT_CHECK_INTERVAL_MINUTES` | `5` | Interval cek YouTube |
 | `MAX_YT_SUBSCRIPTIONS` | `10` | Maks subscription per server |
 | `MAX_CONTEXT_MESSAGES` | `10` | Panjang memory percakapan |
@@ -260,9 +271,10 @@ Tunggu beberapa menit untuk propagasi global.
 
 **Error: "Used disallowed intents"?**
 Aktifkan semua Privileged Intents di Discord Developer Portal → Bot.
-
 **Groq error 429 (rate limit)?**
 Groq gratis punya limit ~30 req/menit. Tunggu sebentar dan coba lagi. Atau upgrade ke [Groq paid plan](https://groq.com/pricing/) untuk limit lebih tinggi.
+**OpenAI error 429 (rate limit)?**
+Cek pemakaian di [platform.openai.com/usage](https://platform.openai.com/usage). Upgrade plan jika perlu.
 
 **YouTube notifications tidak jalan?**
 - Pastikan `YOUTUBE_API_KEY` sudah diisi
@@ -275,5 +287,5 @@ Groq gratis punya limit ~30 req/menit. Tunggu sebentar dan coba lagi. Atau upgra
 MIT — bebas digunakan, dimodifikasi, dan didistribusikan!
 
 ---
-
-*NexusAI Discord Bot v2.0 • Node.js + Discord.js v14 + Groq API (LLaMA 3.3) ⚡*
+ Node.js + Discord.js v14 + Groq API (LLaMA 3.3) ⚡*
+ Node.js + Discord.js v14 + OpenAI*
