@@ -27,7 +27,9 @@ module.exports = {
           '`/meme`\n> Kirim meme random\n\n' +   
           
           '**Tips:**\n' +
-          'Mention bot + pertanyaan langsung bisa AI jawab 😎'
+          'Minecraft server : **kocak.playserver.pro**\n'
+          '                   **21710**\n' 
+          'Mention bot + pertanyaan langsung bisa AI jawab (@kocak utils [pertanyaan])'
         )
         .setFooter({ text: 'Page 1/4' }),
 
