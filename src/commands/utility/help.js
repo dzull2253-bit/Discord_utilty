@@ -67,7 +67,7 @@ module.exports = {
         },
         {
           name: 'Tips',
-          value: 'bisa nanyak ke bot dengan cara **mention bot** (`@Kocak Utils [pertanyaan]`) langsung tanpa slash command!',
+          value: 'bisa nanyak ke bot dengan cara **mention bot** (`{client.user.tag} [pertanyaan]`) langsung aja ngk usah pake slash command!',
           inline: false,
         },
       )
