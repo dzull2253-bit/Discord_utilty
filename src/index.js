@@ -22,18 +22,6 @@ const client = new Client({
   allowedMentions: { parse: ['users', 'roles'], repliedUser: true },
 });
 
-const axios = require("axios");
-
-  if (!channel) return;
-
-  try {
-    const res = await axios.get("https://meme-api.com/gimme");
-    channel.send(res.data.url);
-  } catch (err) {
-    console.log("Error meme:", err);
-  }
-}, 600000); // 10 menit
-
 // ── Attach Collections ────────────────────────────────────────────────────────
 client.commands     = new Collection(); // slash commands
 client.cooldowns    = new Collection(); // cooldown tracking
