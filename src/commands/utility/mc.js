@@ -27,9 +27,9 @@ module.exports = {
 
      if (sub === 'info') {
   return interaction.reply(`
-╔══════════════════════╗
-        🎮 Kocak MC 🎮
-╚══════════════════════╝
+╔══════════════════╗
+      Kocak MC 
+╚══════════════════╝
 
 🌐 IP   : **${HOST}**
 🌍 PORT : **${PORT}**
