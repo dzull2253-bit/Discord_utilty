@@ -9,8 +9,6 @@ module.exports = {
       sub.setName('status').setDescription('Status server'))
     .addSubcommand(sub =>
       sub.setName('info').setDescription('cek info server'))
-    .addSubcommand(sub =>
-      sub.setName('online').setDescription('Jumlah player')
     ),
 
   async execute(interaction) {
@@ -31,9 +29,9 @@ module.exports = {
       Kocak MC 
 ╚══════════════════╝
 
-🌐 IP   : **${HOST}**
-🌍 PORT : **${PORT}**
-
+🌐 IP     : **${HOST}**
+🌍 PORT   : **${PORT}**
+🟢 Online : (${res.players.online} / 100
 ━━━━━━━━━━━━━━━━━━━━━━
 ✨ **FITUR SERVER**
 ━━━━━━━━━━━━━━━━━━━━━━
@@ -52,12 +50,7 @@ module.exports = {
 ━━━━━━━━━━━━━━━━━━━━━━
     `);
     }
-
-      if (sub === 'online') {
-        const res = await util.status(HOST, PORT);
-        return interaction.reply(`👥 Player: ${res.players.online}`);
       }
-
     } catch (err) {
       return interaction.reply("❌ Server offline!");
     }
