@@ -25,33 +25,33 @@ module.exports = {
         return interaction.reply(`🟢 Online (${res.players.online} / 100)`);
       }
 
-      if (sub === 'info') {
+     if (sub === 'info') {
   return interaction.reply(`
-      ╔══════════════════════╗
-              🎮 Kocak MC 🎮
-      ╚══════════════════════╝
-      
-      🌐 IP   : **${HOST}**
-      🌍 PORT : **${PORT}**
-      
-      ━━━━━━━━━━━━━━━━━━━━━━
-      ✨ **FITUR SERVER**
-      ━━━━━━━━━━━━━━━━━━━━━━
-      
-      🌲 Survival  
-      🧱 One Block  
-      💰 Economy  
-      🏦 Bank  
-      🌳 AutoCutTree  
-      ⛏️ VeinMiner  
-      🎁 Special Item  
-      📅 Weekly Reward  
-      
-      ━━━━━━━━━━━━━━━━━━━━━━
-      🔥 Seru • Santai • Banyak Cuan!
-      ━━━━━━━━━━━━━━━━━━━━━━
-      `);
-      }
+╔══════════════════════╗
+        🎮 Kocak MC 🎮
+╚══════════════════════╝
+
+🌐 IP   : **${HOST}**
+🌍 PORT : **${PORT}**
+
+━━━━━━━━━━━━━━━━━━━━━━
+✨ **FITUR SERVER**
+━━━━━━━━━━━━━━━━━━━━━━
+
+🌲 Survival  
+🧱 One Block  
+💰 Economy  
+🏦 Bank  
+🌳 AutoCutTree  
+⛏️ VeinMiner  
+🎁 Special Item  
+📅 Weekly Reward  
+
+━━━━━━━━━━━━━━━━━━━━━━
+🔥 Seru • Santai • Banyak Cuan!
+━━━━━━━━━━━━━━━━━━━━━━
+    `);
+    }
 
       if (sub === 'online') {
         const res = await util.status(HOST, PORT);
