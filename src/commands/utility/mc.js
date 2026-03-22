@@ -8,7 +8,7 @@ module.exports = {
     .addSubcommand(sub =>
       sub.setName('status').setDescription('Status server'))
     .addSubcommand(sub =>
-      sub.setName('info').setDescription('cek info server'))
+      sub.setName('info').setDescription('cek info server'));
     ),
 
   async execute(interaction) {
