@@ -8,7 +8,7 @@ module.exports = {
     .addSubcommand(sub =>
       sub.setName('status').setDescription('Status server'))
     .addSubcommand(sub =>
-      sub.setName('ip').setDescription('IP server'))
+      sub.setName('info').setDescription('cek info server'))
     .addSubcommand(sub =>
       sub.setName('online').setDescription('Jumlah player')
     ),
@@ -25,8 +25,8 @@ module.exports = {
         return interaction.reply(`🟢 Online (${res.players.online} / 100)`);
       }
 
-      if (sub === 'ip') {
-        return interaction.reply(`🌐 IP: ${HOST}\n PORT: ${PORT}`);
+      if (sub === 'info') {
+        return interaction.reply(`**Kocak MC**\n\n🌐 IP: ${HOST}\n 🌐 PORT: ${PORT}\n\n -Survival -One Block\n -Economy -Bank\n -AutoCutTree -Venminer\n -SpesialItem -Weekly Reward`);
       }
 
       if (sub === 'online') {
