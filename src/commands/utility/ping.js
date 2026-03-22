@@ -4,7 +4,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('ping')
-    .setDescription('🏓 Cek latensi bot!'),
+    .setDescription('🏓 Cek Koneksi Bot'),
 
   async execute(interaction) {
     const start = Date.now();
