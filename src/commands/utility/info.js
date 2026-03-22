@@ -23,9 +23,9 @@ module.exports = {
       .addFields(
         { name: '🤖 Nama',        value: client.user.tag,           inline: true },
         { name: '📦 Versi',       value: '2.0.0',                   inline: true },
-        { name: '⚙️ Framework',   value: `Discord.js `, inline: true },
-        { name: '🧠 AI Engine',   value: 'Groq / OpenAI',        inline: true },
         { name: '📺 YT Notif',    value: process.env.YOUTUBE_API_KEY ? '✅ Aktif' : '❌ Tidak aktif', inline: true },
+        { name: '🧠 AI Engine',   value: 'Groq / OpenAI',        inline: true },
+        { name: '⚙️ Framework',   value: `Discord.js `, inline: true },
         { name: '⏱️ Uptime',      value: `${hours}h ${minutes}m ${seconds}s`, inline: true },
       )
       .setFooter({ text: 'Kocak Utils • Always Online 24/7 🟢' })
