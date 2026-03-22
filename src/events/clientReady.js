@@ -62,5 +62,15 @@ module.exports = {
     });
 
     logger.info("😂 Meme scheduler started (every 1 hour)");
+
+    // ================= MEME AUTO =================
+    cron.schedule("0 * * * *", async () => {
+      await sendMemeToAll(client);
+      logger.info("😂 Meme auto jalan");
+    }, {
+      timezone: "Asia/Jakarta"
+    });
+    
+    logger.info("😂 Meme scheduler aktif (1 jam sekali)");
   },
 };
