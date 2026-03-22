@@ -26,7 +26,7 @@ module.exports = {
       }
 
       if (sub === 'ip') {
-        return interaction.reply(`🌐 IP: ${HOST}:${PORT}`);
+        return interaction.reply(`🌐 IP: ${HOST}\n PORT: ${PORT}`);
       }
 
       if (sub === 'online') {
