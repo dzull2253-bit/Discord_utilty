@@ -1,6 +1,7 @@
 const { ActivityType } = require('discord.js');
 const cron = require('node-cron');
 const axios = require('axios');
+const { sendMemeToAll } = require('../services/memeService');
 const logger = require('../utils/logger');
 const { checkAllSubscriptions } = require('../services/youtubeService');
 
