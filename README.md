@@ -17,7 +17,7 @@ Bot Discord AI serbaguna berbasis **Node.js + Discord.js v14** dengan fitur leng
 | `/motivasi` | Kata motivasi powerful |
 | `/fakta [topik]` | Fakta mengejutkan random |
 | `/reset-chat` | Hapus history percakapan |
-| `@NexusAI [pesan]` | Mention bot untuk chat langsung |
+| `@Namebot [pesan]` | Mention bot untuk chat langsung |
 
 ### 🔥 AI Roasting
 | Command | Deskripsi |
@@ -36,11 +36,7 @@ Bot Discord AI serbaguna berbasis **Node.js + Discord.js v14** dengan fitur leng
 ### 😂 AI Meme Generator
 | Command | Deskripsi |
 |---------|-----------|
-| `/meme [template] [topik]` | Generate meme dengan template |
-| `/meme-random [topik]` | AI pilih template otomatis |
-| `/caption-meme [situasi]` | Buat caption meme |
-
-**Template tersedia:** Drake, Distracted Boyfriend, Expanding Brain, This Is Fine, Uno Reverse, Gru's Plan, Two Buttons, Stonks, Bernie Sanders, Woman Yelling at Cat, Surprised Pikachu, Galaxy Brain, Change My Mind, Always Has Been, Panik Kalm Panik
+| `/meme ` | Generate meme dengan template |
 
 ### 📺 YouTube Notifications
 | Command | Deskripsi |
@@ -59,7 +55,7 @@ Notifikasi otomatis untuk:
 | Command | Deskripsi |
 |---------|-----------|
 | `/help` | Panduan lengkap |
-| `/info` | Info bot (uptime, RAM, ping) |
+| `/info` | Info bot  |
 | `/ping` | Cek latensi bot |
 | `/clear [n]` | Hapus 1–100 pesan *(Admin)* |
 
