@@ -14,15 +14,15 @@ module.exports = {
 
     const status =
       latency < 100 ? '🟢 Excellent' :
-      latency < 300 ? '🟡 Good' :
-      latency < 600 ? '🟠 Slow' : '🔴 Very Laggy';
+      latency < 300 ? '🟢 Very Good' :
+      latency < 600 ? '🟢 Good' :
+      latency < 800 ? ' 🟡 Slow' :
+      latency < 1000 ? '🔴 Very Slow' : '❌ Trash';
 
     const embed = new EmbedBuilder()
       .setColor(latency < 100 ? 0x57F287 : latency < 300 ? 0xFEE75C : 0xED4245)
       .setTitle('🏓 Pong!')
       .addFields(
-        { name: '📡 WebSocket Ping', value: `${wsLatency}ms`, inline: true },
-        { name: '⚡ Response Time',  value: `${latency}ms`,   inline: true },
         { name: '📊 Status',         value: status,           inline: true },
       )
       .setTimestamp();
