@@ -26,7 +26,31 @@ module.exports = {
       }
 
       if (sub === 'info') {
-        return interaction.reply(`**Kocak MC**\n\n🌐 IP: ${HOST}\n 🌐 PORT: ${PORT}\n\n -Survival -One Block\n -Economy -Bank\n -AutoCutTree -Venminer\n -SpesialItem -Weekly Reward`);
+  return interaction.reply(`
+      ╔══════════════════════╗
+              🎮 Kocak MC 🎮
+      ╚══════════════════════╝
+      
+      🌐 IP   : **${HOST}**
+      🌍 PORT : **${PORT}**
+      
+      ━━━━━━━━━━━━━━━━━━━━━━
+      ✨ **FITUR SERVER**
+      ━━━━━━━━━━━━━━━━━━━━━━
+      
+      🌲 Survival  
+      🧱 One Block  
+      💰 Economy  
+      🏦 Bank  
+      🌳 AutoCutTree  
+      ⛏️ VeinMiner  
+      🎁 Special Item  
+      📅 Weekly Reward  
+      
+      ━━━━━━━━━━━━━━━━━━━━━━
+      🔥 Seru • Santai • Banyak Cuan!
+      ━━━━━━━━━━━━━━━━━━━━━━
+      `);
       }
 
       if (sub === 'online') {
