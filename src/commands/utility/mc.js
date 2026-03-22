@@ -50,7 +50,6 @@ module.exports = {
 ━━━━━━━━━━━━━━━━━━━━━━
     `);
     }
-      }
     } catch (err) {
       return interaction.reply("❌ Server offline!");
     }
