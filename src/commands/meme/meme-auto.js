@@ -1,39 +1,44 @@
-const { SlashCommandBuilder } = require("discord.js");
-const { setGuild, removeGuild } = require("../../services/memeService");
+const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js");
+const { setChannel, toggleMeme } = require("../../services/memeService");
 
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("meme-auto")
-    .setDescription("Toggle auto meme")
-    .addStringOption(opt =>
-      opt.setName("mode")
-        .setDescription("on / off")
-        .setRequired(true)
-        .addChoices(
-          { name: "ON", value: "on" },
-          { name: "OFF", value: "off" }
-        )
-    ),
+    .setDescription("Atur meme otomatis")
+    .addSubcommand(sub =>
+      sub.setName("set")
+        .setDescription("Set channel meme")
+    )
+    .addSubcommand(sub =>
+      sub.setName("on")
+        .setDescription("Aktifkan meme auto")
+    )
+    .addSubcommand(sub =>
+      sub.setName("off")
+        .setDescription("Matikan meme auto")
+    )
+    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
   async execute(interaction) {
-    const mode = interaction.options.getString("mode");
     const guildId = interaction.guild.id;
-    const channelId = interaction.channel.id;
 
-    if (mode === "on") {
-      setGuild(guildId, channelId);
-      return interaction.reply({
-        content: "✅ Auto meme AKTIF di channel ini",
-        ephemeral: true
-      });
+    if (interaction.options.getSubcommand() === "set") {
+      setChannel(guildId, interaction.channel.id);
+      return interaction.reply({ content: "✅ Channel meme diset!", ephemeral: true });
     }
 
-    if (mode === "off") {
-      removeGuild(guildId);
-      return interaction.reply({
-        content: "❌ Auto meme DIMATIKAN",
-        ephemeral: true
-      });
+    if (interaction.options.getSubcommand() === "on") {
+      const ok = toggleMeme(guildId, true);
+      if (!ok) return interaction.reply({ content: "❌ Set dulu channel pake /meme-auto set", ephemeral: true });
+
+      return interaction.reply({ content: "✅ Meme auto ON", ephemeral: true });
+    }
+
+    if (interaction.options.getSubcommand() === "off") {
+      const ok = toggleMeme(guildId, false);
+      if (!ok) return interaction.reply({ content: "❌ Set dulu channel pake /meme-auto set", ephemeral: true });
+
+      return interaction.reply({ content: "🛑 Meme auto OFF", ephemeral: true });
     }
   }
 };
