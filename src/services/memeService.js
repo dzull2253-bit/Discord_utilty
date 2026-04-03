@@ -2,9 +2,9 @@ const axios = require("axios");
 
 const subreddits = [
   "memes",
-  "dankmemes",
   "funny",
-  "wholesomememes",
+  "minecraft",
+  "valorant",
   "ProgrammerHumor"
 ];
 
